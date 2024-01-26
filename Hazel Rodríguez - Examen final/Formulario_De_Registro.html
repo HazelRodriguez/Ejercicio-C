@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>IndexedDB API</title>
+    <link rel="stylesheet" href="./Styles.css">
+
+    <script src="./indexbd.js"></script>
+    <h1 id="titulo"> Clinica veterinaria Rodríguez </h1>
+</head>
+
+<body id="fondo">
+    <section id="cajaformulario">
+        <form name="formulario">
+            <h2>Datos del Canino</h2>
+            
+            <p>Codigo:<br><input type="text" name="id" id="id"></p>
+            <p>Nombre de la mascota:<br><input type="text" name="nombre" id="nombre"></p>
+            <p>Especie:<br><input type="text" name="especie" id="especie"></p>
+            <p>Raza:<br><input type="text" name="raza" id="raza"></p>
+
+            <p>Género:<br><input list="Lista" type="text" name="genero" id="genero"> 
+                <datalist id="Lista">
+                    <option value="M"></option>
+                    <option value="F"></option>
+                </datalist></p>
+
+            <p>Color:<br><input type="text" name="color" id="color"></p>
+            <p>Propietario:<br><input type="text" name="propietario" id="propietario"></p>
+            <p><input type="button" name="grabar" id="guardar" value="Guardar">
+                <input type="button" id="todo" value="Mostrar todos"></p>
+        </form>
+    </section>
+    <section id="cajadatos">
+        Mostrando información en breve...
+    </section>
+</body>
+
+</html>
